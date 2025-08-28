@@ -1,4 +1,5 @@
 import { Github, Linkedin, Globe } from "lucide-react";
+import Image from "next/image";
 
 interface TeamMember {
   name: string;
@@ -24,7 +25,7 @@ export function TeamMemberCard({
       {/* Top: Avatar + Info */}
       <div className="flex items-center gap-3">
         {avatarUrl ? (
-          <img
+          <Image
             src={avatarUrl}
             alt={name}
             className="w-12 h-12 rounded-full object-cover ring-2 ring-zinc-800"

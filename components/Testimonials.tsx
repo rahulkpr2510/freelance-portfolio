@@ -77,7 +77,7 @@ export default function Testimonials() {
         viewport={{ once: true, amount: 0.2 }}
         className="grid md:grid-cols-3 gap-6 mt-12"
       >
-        {TESTIMONIALS.map((t, i) => (
+        {TESTIMONIALS.map((t) => (
           <motion.div
             key={t.name}
             whileHover={{

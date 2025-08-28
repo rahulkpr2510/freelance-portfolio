@@ -76,7 +76,7 @@ export default function Stack() {
 
             {/* Tech Badges */}
             <div className="flex flex-wrap gap-2 mb-6">
-              {list.map((t, i) => (
+              {list.map((t) => (
                 <motion.div
                   key={t}
                   whileHover={{ scale: 1.07 }}

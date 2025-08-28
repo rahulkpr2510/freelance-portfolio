@@ -52,6 +52,7 @@ export default function Contact() {
       }
     } catch (err) {
       setStatus("🌐 Network error. Try again.");
+      console.log(err);
     } finally {
       setLoading(false);
     }
@@ -73,7 +74,7 @@ export default function Contact() {
       </div>
 
       <SectionTitle
-        icon={undefined as any}
+        icon={undefined}
         label="Let’s build your next thing"
         kicker="Contact"
       />

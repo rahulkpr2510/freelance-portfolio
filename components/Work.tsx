@@ -102,7 +102,7 @@ export default function Work() {
         animate="show"
         className="grid md:grid-cols-3 gap-6"
       >
-        {PROJECTS.map((p, index) => (
+        {PROJECTS.map((p) => (
           <motion.div
             key={p.title}
             whileHover={{
