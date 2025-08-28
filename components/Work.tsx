@@ -2,7 +2,6 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { Badge } from "@/components/ui/badge";
 import { CheckCircle2, Code2, ExternalLink } from "lucide-react";
 
 const PROJECTS = [
@@ -49,11 +48,6 @@ const container = {
     opacity: 1,
     transition: { staggerChildren: 0.2 },
   },
-};
-
-const item = {
-  hidden: { opacity: 0, y: 20 },
-  show: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 80 } },
 };
 
 export default function Work() {

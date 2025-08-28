@@ -23,15 +23,6 @@ const container = {
   },
 };
 
-const item = {
-  hidden: { opacity: 0, y: 25 },
-  show: {
-    opacity: 1,
-    y: 0,
-    transition: { type: "spring", stiffness: 120 },
-  },
-};
-
 export default function Stack() {
   return (
     <section id="stack" className="relative max-w-6xl mx-auto px-4 py-20">

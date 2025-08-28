@@ -19,7 +19,6 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import FadeIn from "./FadeIn";
 
 const METRICS = [
   { label: "Avg. Largest Contentful Paint", value: "<1.5s" },
@@ -45,11 +44,6 @@ const container = {
     y: 0,
     transition: { staggerChildren: 0.15 },
   },
-};
-
-const item = {
-  hidden: { opacity: 0, y: 30 },
-  show: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 100 } },
 };
 
 export default function Hero() {

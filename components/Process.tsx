@@ -21,15 +21,6 @@ const container = {
   },
 };
 
-const item = {
-  hidden: { opacity: 0, y: 20 },
-  show: {
-    opacity: 1,
-    y: 0,
-    transition: { type: "spring", stiffness: 100 },
-  },
-};
-
 export default function Process() {
   return (
     <section id="process" className="relative max-w-7xl mx-auto px-4 py-20">
