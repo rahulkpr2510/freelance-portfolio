@@ -3,6 +3,8 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Rocket, MousePointerClick } from "lucide-react";
+import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
+import { DialogTitle } from "@radix-ui/react-dialog";
 
 const NAV = [
   { name: "Work", href: "#work" },
@@ -30,7 +32,7 @@ export default function NavBar() {
           </a>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center gap-6">
+          <div className="hidden lg:flex items-center gap-6">
             {NAV.map((n) => (
               <a
                 key={n.href}
@@ -52,39 +54,49 @@ export default function NavBar() {
           </div>
 
           {/* Mobile Nav */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <Sheet>
+              <VisuallyHidden>
+                <DialogTitle>Mobile navigation</DialogTitle>
+              </VisuallyHidden>
+              {/* Trigger button */}
               <SheetTrigger asChild>
                 <Button
                   variant="outline"
                   size="icon"
-                  className="border-zinc-700 hover:border-fuchsia-400/40"
+                  className="border-zinc-700 hover:border-fuchsia-400/40 transition-colors"
                 >
                   <Menu className="h-4 w-4 text-zinc-300" />
                 </Button>
               </SheetTrigger>
+
+              {/* Drawer Content */}
               <SheetContent
                 side="right"
-                className="bg-zinc-950/95 border-l border-zinc-800 backdrop-blur-lg"
+                className="bg-zinc-950/95 border-l border-zinc-800 backdrop-blur-xl p-6"
               >
-                <div className="mt-10 flex flex-col gap-4">
-                  {NAV.map((n) => (
+                {/* Navigation Links */}
+                <nav className="mt-8 flex flex-col gap-3">
+                  {NAV.map((n, i) => (
                     <a
                       key={n.href}
                       href={n.href}
                       className="text-base text-zinc-300 hover:text-white transition-colors"
+                      style={{ animationDelay: `${i * 80}ms` }}
                     >
                       {n.name}
                     </a>
                   ))}
+
+                  {/* CTA button */}
                   <Button
                     asChild
                     variant="outline"
                     className="mt-4 border-zinc-700 hover:border-fuchsia-400/40 hover:text-fuchsia-300"
                   >
-                    <a href="#contact">Hire Us</a>
+                    <a href="#contact">🚀 Hire Us</a>
                   </Button>
-                </div>
+                </nav>
               </SheetContent>
             </Sheet>
           </div>
