@@ -19,10 +19,25 @@ export default function Contact() {
     },
     {
       name: "Himanshu Bhardwaj",
-      role: "Web Developer",
+      role: "Web Developer & Web3",
       initials: "HB",
       github: "https://github.com/bprince203",
       linkedin: "https://www.linkedin.com/in/bprince203",
+      website: "https://himanshu-bhardwaj.vercel.app/",
+    },
+    {
+      name: "Ayush Tiwari",
+      role: "Web Developer",
+      initials: "AT",
+      github: "https://github.com/Ayush1305t",
+      linkedin: "https://www.linkedin.com/in/ayush-tiwari05/",
+    },
+    {
+      name: "Diya Jain",
+      role: "Web Developer",
+      initials: "DJ",
+      github: "https://github.com/Diyajain3",
+      linkedin: "https://www.linkedin.com/in/diya-jain-089aa4286",
     },
   ];
 
@@ -89,7 +104,7 @@ export default function Contact() {
         >
           <h3 className="text-lg font-semibold text-white">Project Inquiry</h3>
           <p className="text-zinc-400 mt-2 text-sm">
-            Share a few details and I’ll get back with a scoped plan.
+            Share a few details and we’ll get back with a scoped plan.
           </p>
 
           <form className="mt-6 space-y-4" onSubmit={handleSubmit}>
@@ -176,7 +191,9 @@ export default function Contact() {
             </div>
             <div className="rounded-lg border border-zinc-800 p-3 bg-zinc-950/40">
               <div className="text-xs text-zinc-400">Availability</div>
-              <div className="font-medium text-white">Taking 1 new project</div>
+              <div className="font-medium text-white">
+                Taking 2 new projects
+              </div>
             </div>
           </div>
 
