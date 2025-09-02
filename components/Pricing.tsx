@@ -12,7 +12,7 @@ const USD_TO_INR = 83; // adjust for live exchange later
 const PACKAGES = [
   {
     name: "Landing Sprint",
-    priceUSD: 199,
+    priceUSD: 119,
     period: "7–10 days",
     features: [
       "Conversion-first landing page",
@@ -24,8 +24,8 @@ const PACKAGES = [
   {
     name: "MVP Launch",
     highlight: true,
-    priceUSD: 999,
-    period: "3–5 weeks",
+    priceUSD: 499,
+    period: "3–4 weeks",
     features: [
       "Full-stack web app",
       "CI/CD + staging",
@@ -35,7 +35,7 @@ const PACKAGES = [
   },
   {
     name: "Mobile App Kit",
-    priceUSD: 1499,
+    priceUSD: 699,
     period: "3–4 weeks",
     features: [
       "React Native app (iOS/Android)",
