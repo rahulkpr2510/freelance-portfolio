@@ -25,20 +25,6 @@ export default function Contact() {
       linkedin: "https://www.linkedin.com/in/bprince203",
       website: "https://himanshu-bhardwaj.vercel.app/",
     },
-    {
-      name: "Ayush Tiwari",
-      role: "Web Developer",
-      initials: "AT",
-      github: "https://github.com/Ayush1305t",
-      linkedin: "https://www.linkedin.com/in/ayush-tiwari05/",
-    },
-    {
-      name: "Diya Jain",
-      role: "Web Developer",
-      initials: "DJ",
-      github: "https://github.com/Diyajain3",
-      linkedin: "https://www.linkedin.com/in/diya-jain-089aa4286",
-    },
   ];
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
