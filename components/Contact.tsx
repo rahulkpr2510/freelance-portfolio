@@ -32,28 +32,35 @@ export default function Contact() {
     setLoading(true);
     setStatus(null);
 
-    const fd = new FormData(e.currentTarget);
+    const form = e.currentTarget; // save reference
+    const fd = new FormData(form);
+
     const payload = {
       name: fd.get("name"),
       email: fd.get("email"),
+      company: fd.get("company"),
       message: fd.get("message"),
+      nda: fd.get("nda") === "on", // ✅ true if checked
     };
 
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
-        body: JSON.stringify(payload),
         headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
       });
-      if (res.ok) {
+
+      const data = await res.json().catch(() => ({}));
+
+      if (res.ok && data.success) {
         setStatus("✅ Message sent — I’ll reply soon.");
-        e.currentTarget.reset();
+        form.reset();
       } else {
-        setStatus("⚠️ Failed to send. Try again later.");
+        setStatus(data.error || "⚠️ Failed to send. Try again later.");
       }
     } catch (err) {
+      console.error("Network error:", err);
       setStatus("🌐 Network error. Try again.");
-      console.log(err);
     } finally {
       setLoading(false);
     }
