@@ -10,7 +10,8 @@ const sanitize = (str: string) => str.replace(/[<>]/g, "");
 export async function POST(req: Request) {
   try {
     const json = await req.json();
-    let { name, email, message, nda, company } = json || {};
+    let { name, email, message, company } = json || {};
+    const { nda } = json || {};
 
     name = name ? sanitize(name.trim()) : "";
     email = email ? sanitize(email.trim()) : "";
