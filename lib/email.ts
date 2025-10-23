@@ -7,10 +7,7 @@ if (!RESEND_API_KEY) {
 }
 
 const FROM_EMAIL = "Portfolio <no-reply@rahul-kapoor.in>";
-export const LIB_EMAIL_TO = [
-  "rahulkpr1972@gmail.com",
-  "bhardwaj2038@gmail.com",
-];
+export const LIB_EMAIL_TO = ["rahulkpr1972@gmail.com"];
 
 export const resend = new Resend(RESEND_API_KEY || "");
 
