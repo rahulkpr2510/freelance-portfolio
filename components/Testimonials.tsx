@@ -12,19 +12,19 @@ const TESTIMONIALS = [
     name: "EduSaaS",
     role: "Founder, EdTech Startup",
     quote:
-      "The team transformed early concepts into a fully functional product. Their structured process, clear communication, and commitment to deadlines made collaboration seamless.",
+      "Rahul transformed our early concept into a fully functional EdTech SaaS platform. His structured process, clear communication, and ability to meet every milestone made the entire collaboration smooth and stress-free. His full-stack expertise and design sense turned our ideas into a polished product.",
   },
   {
     name: "HealthTech Labs",
     role: "Product Manager",
     quote:
-      "Working with the team felt effortless. From mobile optimization to performance improvements, they delivered results that significantly boosted user engagement.",
+      "Working with Rahul felt effortless. He quickly understood our product goals and optimized both performance and mobile experience. The improvements he implemented led to faster load times, better accessibility, and a noticeable boost in user engagement.",
   },
   {
     name: "LogiTrack",
     role: "CTO, Logistics Platform",
     quote:
-      "Their focus on reliability and scalability stood out. The realtime dashboards and zero-downtime deployments became a backbone for our operations.",
+      "Rahul’s focus on reliability and scalability stood out from day one. He built real-time dashboards, optimized backend APIs, and deployed an automated CI/CD pipeline with zero downtime. His technical depth and commitment made him an invaluable contributor to our platform’s success.",
   },
 ];
 
@@ -63,11 +63,7 @@ export default function Testimonials() {
       </div>
 
       {/* Section Header */}
-      <SectionTitle
-        icon={Quote}
-        label="What partners say"
-        kicker="Team impact"
-      />
+      <SectionTitle icon={Quote} label="What partners say" kicker="My impact" />
 
       {/* Testimonials Grid */}
       <motion.div
