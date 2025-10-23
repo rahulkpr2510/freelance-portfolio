@@ -69,12 +69,12 @@ export default function Services() {
       <div className="max-w-6xl mx-auto px-4 py-16">
         <SectionTitle
           label="Services"
-          kicker="What you can hire us for"
+          kicker="What you can hire me for"
           icon={Globe}
         />
         <p className="text-zinc-400 max-w-3xl">
-          We focus on delivering measurable product outcomes: lower load times,
-          higher conversion, and reliable releases. Pick a scope below — we’ll
+          I focus on delivering measurable product outcomes: lower load times,
+          higher conversion, and reliable releases. Pick a scope below — I’ll
           handle the rest.
         </p>
       </div>
