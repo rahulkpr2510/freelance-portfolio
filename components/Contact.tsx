@@ -17,14 +17,6 @@ export default function Contact() {
       linkedin: "https://www.linkedin.com/in/rahulkpr2510",
       website: "https://rahul-kapoor.in",
     },
-    {
-      name: "Himanshu Bhardwaj",
-      role: "Web Developer & Web3",
-      initials: "HB",
-      github: "https://github.com/bprince203",
-      linkedin: "https://www.linkedin.com/in/bprince203",
-      website: "https://himanshu-bhardwaj.vercel.app/",
-    },
   ];
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -97,7 +89,7 @@ export default function Contact() {
         >
           <h3 className="text-lg font-semibold text-white">Project Inquiry</h3>
           <p className="text-zinc-400 mt-2 text-sm">
-            Share a few details and we’ll get back with a scoped plan.
+            Share a few details and I’ll get back with a scoped plan.
           </p>
 
           <form className="mt-6 space-y-4" onSubmit={handleSubmit}>
@@ -164,7 +156,7 @@ export default function Contact() {
           className="space-y-6"
         >
           {/* Team Members */}
-          <div className="grid sm:grid-cols-2 gap-4">
+          <div className="grid">
             {team.map((member, i) => (
               <motion.div
                 key={i}
@@ -178,14 +170,14 @@ export default function Contact() {
 
           {/* Quick Stats */}
           <div className="grid grid-cols-2 gap-3">
-            <div className="rounded-lg border border-zinc-800 p-3 bg-zinc-950/40">
+            <div className="rounded-lg border border-zinc-800 p-5 bg-zinc-950/40">
               <div className="text-xs text-zinc-400">Avg. reply</div>
               <div className="font-medium text-white">&lt; 2 hours</div>
             </div>
-            <div className="rounded-lg border border-zinc-800 p-3 bg-zinc-950/40">
+            <div className="rounded-lg border border-zinc-800 p-5 bg-zinc-950/40">
               <div className="text-xs text-zinc-400">Availability</div>
               <div className="font-medium text-white">
-                Taking 2 new projects
+                Taking 3 new projects
               </div>
             </div>
           </div>
