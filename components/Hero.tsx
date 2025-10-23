@@ -35,6 +35,9 @@ const HERO_TAGS = [
   "React Native",
   "Vercel",
   "AWS",
+  "PostgreSQL",
+  "MongoDB",
+  "AI & ML",
 ];
 
 const container = {
@@ -105,7 +108,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7 }}
             >
-              We build{" "}
+              I build{" "}
               <motion.span
                 className="bg-gradient-to-r from-primary to-fuchsia-500 bg-clip-text text-transparent"
                 animate={{ opacity: [0.6, 1, 0.6] }}
@@ -179,7 +182,7 @@ export default function Hero() {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <Sparkles className="h-5 w-5 text-fuchsia-400 animate-pulse" />{" "}
-                    What we bring
+                    What I bring
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
@@ -218,7 +221,7 @@ export default function Hero() {
                     <div className="text-sm text-zinc-400">
                       Availability:{" "}
                       <span className="text-zinc-200 font-medium">
-                        Taking 1 new project
+                        Taking 3 new projects
                       </span>
                     </div>
                     <TooltipProvider>
