@@ -8,9 +8,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "ByteWave | Web & App",
+  title: "Rahul | Web & App",
   description:
-    "ByteWave is a full-service web and app development company delivering modern, responsive, and scalable digital solutions for businesses and startups of all sizes.",
+    "Rahul Kapoor — Full-stack Developer & AI/ML Enthusiast specializing in building modern web apps, SaaS products, and scalable APIs using Next.js, Node.js, and TypeScript. Hire a freelance developer who delivers high-performance, visually polished, and business-ready digital experiences.",
 };
 
 export default function RootLayout({
