@@ -8,9 +8,14 @@ const PROJECTS = [
   {
     title: "MediSync — Healthcare SaaS",
     summary:
-      "Collaborative healthcare platform for hospitals and clinics. Patient record management, secure teleconsults, and AI-driven insights.",
-    tags: ["Next.js", "Clerk", "Postgres", "Vonage", "Clerk Billing"],
-    impact: ["HIPAA-ready", "Realtime updates", "Zero downtime sync"],
+      "A full-stack healthcare SaaS platform built for hospitals and clinics to securely manage patient records, enable real-time teleconsultations, and gain actionable AI insights. Designed for privacy, scalability, and reliability.",
+    tags: ["Next.js", "Clerk", "Postgres", "Vonage", "Tailwind"],
+    impact: [
+      "Secure patient data handling (HIPAA-ready)",
+      "Real-time appointment sync and updates",
+      "Optimized architecture for 24×7 uptime",
+      "AI-assisted health trend insights",
+    ],
     link: "https://medisync.rahul-kapoor.in",
     repo: "https://www.github.com/rahulkpr2510/medisync",
     imageUrl: "/medisync.png",
@@ -18,12 +23,13 @@ const PROJECTS = [
   {
     title: "Mentora — Learning & Career Platform",
     summary:
-      "A mentorship-first platform connecting students with industry experts. Personalized dashboards, scheduling, and progress tracking.",
-    tags: ["Next.js", "Clerk", "Postgres", "Gemini", "Tailwind"],
+      "A mentorship-driven platform connecting students and professionals. Features include personalized dashboards, progress analytics, and seamless scheduling to empower skill development through real-world guidance.",
+    tags: ["Next.js", "Clerk", "Postgres", "Gemini API", "Tailwind"],
     impact: [
-      "Skill uplift",
-      "1:1 mentor connect",
-      "Seamless mobile experience",
+      "Personalized learning dashboards",
+      "1:1 mentor-mentee interaction system",
+      "Fully responsive mobile-first UI",
+      "Boosted engagement with gamified tracking",
     ],
     link: "https://mentora.rahul-kapoor.in",
     repo: "https://www.github.com/rahulkpr2510/mentora",
@@ -32,11 +38,16 @@ const PROJECTS = [
   {
     title: "BrandFlow — Marketing Automation (Coming Soon)",
     summary:
-      "End-to-end brand workflow tool for marketers. Campaign automation, analytics dashboards, and AI-assisted content generation.",
+      "An all-in-one workflow automation platform for marketers to plan, launch, and analyze campaigns effortlessly. Integrates AI-driven content generation, campaign analytics, and billing for freelancers and teams.",
     tags: ["Next.js", "Clerk", "Redis", "Stripe", "Tailwind"],
-    impact: ["Faster GTM", "Automated workflows", "Data-driven campaigns"],
+    impact: [
+      "Automated campaign scheduling & management",
+      "AI-assisted ad copy and content generation",
+      "Centralized analytics for real-time insights",
+      "Integrated Stripe billing for subscriptions",
+    ],
     link: "#",
-    repo: "https://www.github.com/rahulkpr2510/brandflow",
+    repo: "#",
     imageUrl: "/brandflow.png",
   },
 ];
@@ -132,15 +143,17 @@ export default function Work() {
                   {p.title}
                 </h3>
                 <div className="flex gap-2">
-                  <a
-                    href={p.repo}
-                    onClick={(e) => e.stopPropagation()}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="p-1.5 rounded-md border border-zinc-700 text-zinc-400 hover:text-white hover:border-fuchsia-500/50 transition-colors"
-                  >
-                    <Code2 className="h-4 w-4" />
-                  </a>
+                  {p.repo !== "#" && (
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        window.open(p.link, "_blank");
+                      }}
+                      className="p-1.5 rounded-md border border-zinc-700 text-zinc-400 hover:text-white hover:border-fuchsia-500/50 transition-colors"
+                    >
+                      <Code2 className="h-4 w-4" />
+                    </button>
+                  )}
                   {p.link !== "#" && (
                     <button
                       onClick={(e) => {
