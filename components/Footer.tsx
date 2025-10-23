@@ -14,7 +14,7 @@ export default function Footer() {
             <Rocket className="h-4 w-4 text-zinc-400 group-hover:text-fuchsia-400 transition-colors" />
           </span>
           <span className="text-zinc-500 group-hover:text-zinc-300 transition">
-            © {new Date().getFullYear()} ByteWave. All rights reserved.
+            © {new Date().getFullYear()} Rahul Kapoor. All rights reserved.
           </span>
         </div>
 
