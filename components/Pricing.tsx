@@ -12,7 +12,7 @@ const USD_TO_INR = 83; // adjust for live exchange later
 const PACKAGES = [
   {
     name: "Landing Sprint",
-    priceUSD: 119,
+    priceUSD: 99,
     period: "7–10 days",
     features: [
       "Conversion-first landing page",
@@ -24,7 +24,7 @@ const PACKAGES = [
   {
     name: "MVP Launch",
     highlight: true,
-    priceUSD: 499,
+    priceUSD: 399,
     period: "3–4 weeks",
     features: [
       "Full-stack web app",
@@ -35,7 +35,7 @@ const PACKAGES = [
   },
   {
     name: "Mobile App Kit",
-    priceUSD: 699,
+    priceUSD: 599,
     period: "3–4 weeks",
     features: [
       "React Native app (iOS/Android)",
@@ -52,6 +52,13 @@ export default function Pricing() {
   const formatPrice = (usd: number) => {
     if (currency === "USD") return `$${usd}`;
     return `₹${(usd * USD_TO_INR).toLocaleString("en-IN")}`;
+  };
+
+  const handleSubmit = () => {
+    const contactForm = document.getElementById("contact");
+    if (contactForm) {
+      contactForm.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
@@ -154,6 +161,7 @@ export default function Pricing() {
                 <Button
                   variant="outline"
                   className="w-full border-zinc-700 hover:border-fuchsia-400/40 hover:text-fuchsia-300 transition-all"
+                  onClick={() => handleSubmit()}
                 >
                   {p.cta}
                 </Button>
