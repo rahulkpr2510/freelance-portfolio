@@ -27,7 +27,7 @@ export default function NavBar() {
               <Rocket className="h-4 w-4 text-zinc-300 group-hover:text-fuchsia-400 transition-colors" />
             </span>
             <span className="font-medium tracking-tight group-hover:text-fuchsia-400 transition-colors">
-              ByteWave | Web & App
+              Rahul | Web & App
             </span>
           </a>
 
@@ -48,7 +48,7 @@ export default function NavBar() {
               className="gap-2 text-sm border-zinc-700 hover:border-fuchsia-400/40 hover:text-fuchsia-400"
             >
               <a href="#contact">
-                <MousePointerClick className="h-4 w-4" /> Hire Us
+                <MousePointerClick className="h-4 w-4" /> Hire Me
               </a>
             </Button>
           </div>
@@ -94,7 +94,7 @@ export default function NavBar() {
                     variant="outline"
                     className="mt-4 border-zinc-700 hover:border-fuchsia-400/40 hover:text-fuchsia-300"
                   >
-                    <a href="#contact">🚀 Hire Us</a>
+                    <a href="#contact">🚀 Hire Me</a>
                   </Button>
                 </nav>
               </SheetContent>
