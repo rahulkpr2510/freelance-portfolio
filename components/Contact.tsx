@@ -198,7 +198,7 @@ export default function Contact() {
                 </div>
               </div>
               <a
-                href="https://calendly.com/"
+                href="https://calendly.com/rahulkpr2510/15min"
                 target="_blank"
                 rel="noreferrer"
                 className="px-3 py-2 rounded-md border border-zinc-700 text-sm text-zinc-300 hover:border-fuchsia-400/40 hover:text-fuchsia-300 transition-all"
